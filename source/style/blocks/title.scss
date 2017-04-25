@@ -1,0 +1,32 @@
+.title{
+    font-size: 63px;
+    color: #373e42;
+    padding: 45px 80px;
+    display: inline-block;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include bernier();
+    
+    
+    
+    $margin: 40px;
+    
+    &:after, &:before {
+        content: "";
+        display: block;
+        @include centered(y);
+        background: rgba($main-font-color, .2);
+        width: 22px;
+        height: 5px;
+    }
+    
+    &:after {
+        right: $margin;
+    }
+    
+    &:before{
+        left: $margin;
+    }
+}

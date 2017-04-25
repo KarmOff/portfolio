@@ -1,0 +1,26 @@
+.works
+{
+    @extend %clearfix; 
+    position: relative;
+}
+.work__left, .work__right {
+    float: left;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    height: 1px;
+}
+
+.work__triangles {
+    position: absolute;
+    bottom: 100%;
+}
+.work__title
+{
+    height: 185px;
+    background-color: #faf8f0;
+}
+.work__section-title
+{
+    @include centered (x);
+}

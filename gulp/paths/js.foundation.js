@@ -1,5 +1,9 @@
 'use strict';
 
 module.exports = [
-  './node_modules/jquery/dist/jquery.min.js'
+  './node_modules/jquery/dist/jquery.min.js',
+ './source/js/svg4everybody.js'
 ];
+
+
+

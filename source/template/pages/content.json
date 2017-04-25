@@ -1,0 +1,55 @@
+{
+  "skills": [
+    {
+      "name": "Frontend",
+      "skills": [{
+        "skillname": "HTML5",
+        "skillvalue": 70
+      },
+      {
+        "skillname": "CSS3",
+        "skillvalue": 70
+      },
+      { "skillname": "JavaScript & jQuery",
+        "skillvalue": 40
+      }]
+    },
+    {
+      "name": "Backend",
+      "skills": [
+        {
+          "skillname": "PHP",
+          "skillvalue": 40
+        },
+        {
+          "skillname": "mySQL",
+          "skillvalue": 50
+        },
+        {
+          "skillname": "Node.js & npm",
+          "skillvalue": 10
+        },
+        {
+          "skillname": "Mongo.db",
+          "skillvalue": 10
+      }]
+    },
+    {
+      "name": "Workflow",
+      "skills": [
+        {
+          "skillname": "Git",
+          "skillvalue": 60
+        },
+        {
+          "skillname": "Gulp",
+          "skillvalue": 60
+        },
+        {
+          "skillname": "Bower",
+          "skillvalue": 50
+        }
+      ]
+    }
+  ]
+}

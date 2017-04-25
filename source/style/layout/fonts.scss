@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@font-face {
+	font-family: 'bernier';
+	src: url('../fonts/bernierregular-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'roboto-bold';
+	src: url('../fonts/Roboto-Bold.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('../fonts/Roboto-Regular.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'bernierregularregular';
+	src: url('../fonts/bernierregularregular.ttf') format('ttf');
+}
+
+
+@font-face {
+	font-family: 'Roboto-Medium';
+	src: url('../fonts/Roboto-Medium.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url('../fonts/Roboto-Light.ttf') format('ttf');
+}
+
+
+
+
+
+@mixin bernier() {
+	font-family: 'bernier';
+}

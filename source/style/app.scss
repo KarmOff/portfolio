@@ -1,5 +1,30 @@
-body {
-  margin: 0;
-}
+$white : #efeee9;
+$beige : #eeebdf;
+$main-font-color: #373e42;
+$work_white : #faf8f0;
 
-@import 'common/header';
+
+//layout setups
+@import "layout/setups";
+@import "layout/fonts";
+
+//mixins
+@import "helpers/mixins";
+
+//Blocks
+@import "blocks/hero";
+@import "blocks/user";
+@import "blocks/section-title";
+@import "blocks/down-arrow";
+@import "blocks/about";
+@import "blocks/triangle";
+@import "blocks/title";
+@import "blocks/subtitle";
+@import "blocks/skills";
+@import "blocks/map";
+@import "blocks/call-back";
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/works";
+@import "blocks/nav-menu";
+@import "blocks/socials"

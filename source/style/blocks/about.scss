@@ -1,0 +1,90 @@
+.about{
+    @extend %clearfix;   
+    height: 854px;
+    position: relative;
+}
+
+.about__left, .about__right {
+    float: left;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.about__left{
+    background: $white;
+    padding-right: 10px;
+}
+
+.about__right{
+    background: $beige;
+}
+.about__triangles{
+    position: absolute;
+    bottom: 100%;
+}
+.about-data
+{
+    padding-left: 40px;
+}
+.about__left__blockleft
+{
+    width: 50%;
+    float: left;
+}
+.about__left__blockright
+{
+  
+    width: 50%;
+    float: left;
+}
+.user-about
+{
+    @extend %clearfix;    
+    color: #455a64;
+    width:443px;
+    float: right;
+}
+.about__section-title
+{
+    @include centered(x);
+    margin-top: -50px;
+}
+.user-about__picture
+{
+    width: 100%;
+    height: 391px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.user-about__title
+{
+    text-align: center;
+}
+
+.user-about__text
+{
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+   
+}
+.user-about__text p
+{
+    margin-bottom: 19px;
+}
+.about-user-info__title
+{
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.about-user-info__text
+{
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    color: #455a64;
+    margin-top: 20px;
+}

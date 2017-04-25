@@ -1,0 +1,42 @@
+section.section.about
+        .about__left
+            .about__left__blockleft
+                svg(viewbox="0 0 1000 100" preserveAspectRatio="none").triangle.triangle_fill_white.about__triangles
+                    polygon(points="0,0 0,100 1000,100")
+                +title('Обо мне', 'about-header.png', 'about__section-title')
+                
+            .about__left__blockright    
+                .user-about
+                    .user-about__picture
+                        img(src="assets/img/content/about.jpg", alt="")
+                    .user-about__title
+                        +title('Кто я', '', 'subtitle')
+                        
+                    .user-about__text
+                        p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                        p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+                        
+        .about__right
+            svg(viewbox="0 0 1000 100" preserveAspectRatio="none").triangle.triangle_fill_beige.about__triangles
+                polygon(points="0,100 1000,100 1000,0")
+            .about-data
+                .about-data__description.about-user-info
+                    .about-user-info__title
+                        +title('Чем я могу быть вам полезен', '', 'subtitle')   
+                        
+                    .about-user-info__text
+                        p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                .about-data__content
+                    ul.skills
+                        each sum in skills
+                            li.skills__item
+                                .skill-section
+                                    .skill-section__title= sum.name
+                                    ul.skill-section__list
+                                        each skill in sum.skills
+                                            li.skills-section__item
+                                                .skill
+                                                    svg.circles(viewbox="0 0 110 110")
+                                                        circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                                                        circle.circle__second(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" stroke-opacity=`0.${skill.skillvalue}` class=`circle-${skill.skillvalue}`)
+                                                    .skill__name= skill.skillname

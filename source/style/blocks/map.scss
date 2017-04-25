@@ -1,0 +1,20 @@
+
+.map {
+	height: 1074px;
+	background: url('../img/content/map.jpg') center center no-repeat;
+	background-size: cover;
+    position: relative;
+}
+
+.map__callback
+{
+    top:0;
+    color: #373e42;
+    @include centered(x);
+    top:328px;
+}
+
+.map__contacts
+{
+    margin-top: 20px;
+}

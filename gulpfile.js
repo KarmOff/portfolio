@@ -12,6 +12,7 @@ global.$ = {
   gulp: require('gulp'),
   del: require('del'),
   browserSync: require('browser-sync').create(),
+  fs: require('fs'),
   gp: require('gulp-load-plugins')()
 };
 
@@ -26,7 +27,8 @@ $.gulp.task('default', $.gulp.series(
     'pug',
     'js:foundation',
     'js:process',
-    'copy:media',
+    'copy:fonts',
+    'copy:image',
     'css:foundation',
     'sprite:svg'
   ),
