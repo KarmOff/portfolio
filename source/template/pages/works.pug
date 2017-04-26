@@ -5,5 +5,30 @@ block title
 
 block content
     include ../sections/hero
-    include ../sections/works           
+    
+    section.section.works-head
+        svg(viewbox="0 0 1000 100" preserveAspectRatio="none").work-head__triangle.work__triangles_left
+            polygon(points="0,0 0,100 1000,100")
+        svg(viewbox="0 0 1000 100" preserveAspectRatio="none").work-head__triangle.work__triangles_right
+            polygon(points="0,100 1000,100 1000,0")                
+        +title('Мои работы', 'works-header.png', 'work-head__title')
+    
+    section.section.slider
+            .slider__column.slider__column_left
+                .slider__desc
+                    .slider__desc-title
+                        +title('Сайт школы онлайн образования', '', 'subtitle')  
+                    .slider__desc-skills
+                        | HTML, css, javascript
+                    .slider__desc-btn
+                        a(href="#").btn Посмотреть сайт
+                        svg.socials__icon
+                                use(xlink:href=`./assets/img/sprite/sprite.svg#link`)
+            .slider__column.slider__column_right 
+    
+    
+    
+    
+    include ../sections/map
     include ../sections/reviews
+    include ../sections/footer
