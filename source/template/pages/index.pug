@@ -4,6 +4,31 @@ block title
   - var title = 'Main page'
 
 block content
-    
+    section.section.welcome
+        .form.form__welcom
+            .user.form__user-block
+                .form__photo
+                    img(src="assets/img/content/user.jpg", alt="")
+                .form__name
+                    | Артур Кармов
+                .form__desc Личный сайт веб-разработчика
+                
+            ul.socials
+                each item in ['vk','gh','in']
+                    li.socials__item
+                        a(href="" class=`social__link social__link_${item}`)
+                            svg.socials__icon
+                                use(xlink:href=`./assets/img/sprite/sprite.svg#${item}`)
+            ul.form__nav-menu
+                li
+                    a(href="#") Мои работы
+                li
+                    a(href="#") Обо мне
+                li
+                    a(href="#") Блог   
+        
+        a(href="#").login.welcome__login Авторизоваться
+        
+        .welcome__autor © Кармов Артур | создано с любовью в LoftSchool | 2017
     
        

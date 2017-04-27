@@ -16,10 +16,10 @@ section.section.reviews
                     img(src="assets/img/content/Vova.png" alt="").commetns__photo
                     .comments__name Сабанцев Владимир
                     .comments__specialty преподаватель
-        .form.reviews__form
-            +title('Связаться со мной', '', 'form__title')
-            input(type="text", name="title", placeholder='Имя').form__name 
-            input(type="email", name="email", placeholder='Email').form__email 
-            textarea(type="textarea", name="textarea", placeholder='Ваше сообщение').form__textarea
-            a(href="#").form__send Отправить
-            a(href="#").form__clear Очистить
+        .call-back.reviews__call-back
+            +title('Связаться со мной', '', 'call-back__title')
+            input(type="text", name="title", placeholder='Имя').call-back__name 
+            input(type="email", name="email", placeholder='Email').call-back__email 
+            textarea(type="textarea", name="textarea", placeholder='Ваше сообщение').call-back__textarea
+            a(href="#").call-back__send Отправить
+            a(href="#").call-back__clear Очистить
