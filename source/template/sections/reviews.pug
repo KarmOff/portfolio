@@ -1,0 +1,25 @@
+section.section.reviews
+        +title('Что обо мне говорят', 'about-header.png', 'reviews__title')
+        .reviews__commetns
+            .reviews__commetns_item
+                .comments__text
+                    | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                .comments__aoutor
+                    img(src="assets/img/content/Dima.png" alt="").commetns__photo
+                    .comments__name Ковальчук Дмитрий
+                    .comments__specialty основатель Loftchool
+                
+            .reviews__commetns_item
+                .comments__text
+                    | Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                .comments__aoutor
+                    img(src="assets/img/content/Vova.png" alt="").commetns__photo
+                    .comments__name Сабанцев Владимир
+                    .comments__specialty преподаватель
+        .form.reviews__form
+            +title('Связаться со мной', '', 'form__title')
+            input(type="text", name="title", placeholder='Имя').form__name 
+            input(type="email", name="email", placeholder='Email').form__email 
+            textarea(type="textarea", name="textarea", placeholder='Ваше сообщение').form__textarea
+            a(href="#").form__send Отправить
+            a(href="#").form__clear Очистить

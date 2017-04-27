@@ -1,0 +1,33 @@
+.nav__bar {
+    text-align: right;
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    
+    
+    &_ul {
+        margin: 0;
+        padding: 15px 0;
+    
+        li {
+            padding: 15px 17px 15px 0;
+            border-right: 3px solid transparent;
+            
+            
+            &:hover {
+                border-right: 3px solid #00bfa5;
+            }
+            
+            
+            a {
+                color: #455a64;
+                
+                &:hover {
+                    font-family: "Roboto-Bold";
+                    color: #00bfa5;
+                }
+            }
+            
+            
+        }
+    }
+}

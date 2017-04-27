@@ -7,9 +7,9 @@ block content
     include ../sections/hero
     
     section.section.works-head
-        svg(viewbox="0 0 1000 100" preserveAspectRatio="none").work-head__triangle.work__triangles_left
+        svg(viewbox="0 0 1000 100" preserveAspectRatio="none").triangles.works__triangles.triangles_left
             polygon(points="0,0 0,100 1000,100")
-        svg(viewbox="0 0 1000 100" preserveAspectRatio="none").work-head__triangle.work__triangles_right
+        svg(viewbox="0 0 1000 100" preserveAspectRatio="none").triangles.works__triangles.triangles_right
             polygon(points="0,100 1000,100 1000,0")                
         +title('Мои работы', 'works-header.png', 'work-head__title')
     
@@ -32,8 +32,5 @@ block content
                 a(href="#").slider__btn.slider__btn_left
                 a(href="#").slider__btn.slider__btn_right
     
-    
-    
-    include ../sections/map
     include ../sections/reviews
     include ../sections/footer

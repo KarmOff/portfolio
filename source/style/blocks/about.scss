@@ -12,16 +12,23 @@
 }
 
 .about__left{
-    background: $white;
+    background: #efeee9;
     padding-right: 10px;
 }
 
 .about__right{
-    background: $beige;
+    background: #eeebdf;
 }
 .about__triangles{
     position: absolute;
     bottom: 100%;
+    width: 100%;
+}
+.about__triangles-left {
+    fill:#efeee9;
+}
+.about__triangles-right {
+    fill:#eeebdf;
 }
 .about-data
 {

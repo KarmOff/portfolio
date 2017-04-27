@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 @font-face {
-	font-family: 'bernier';
+	font-family: 'Bernier-Regular';
 	src: url('../fonts/bernierregular-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
@@ -32,10 +32,11 @@
 	src: url('../fonts/Roboto-Light.ttf') format('ttf');
 }
 
-
-
-
-
-@mixin bernier() {
-	font-family: 'bernier';
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('../fonts/Roboto-Bold.ttf') format('ttf');
 }
+
+
+
+

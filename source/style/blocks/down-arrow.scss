@@ -3,4 +3,11 @@
     bottom: 40px;
    @include centered(x);
     z-index: 2;
+    
+    
+    &__icon {
+        width: 26px;
+        height: 17px;
+        fill:#fff;
+    }
 }

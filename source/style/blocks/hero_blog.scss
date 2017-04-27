@@ -1,0 +1,26 @@
+.hero_blog {
+    height: 396px;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../img/bg/portfolio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+    
+    .subtitle
+    {
+        display: block;
+        font-size: 63px;
+        color: #fff;
+    }
+    .socials {
+        margin-left: 18.33%;
+    }
+    
+    .hamburger {
+        margin-right: 18.33%;
+    }
+    
+    
+}

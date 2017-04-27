@@ -1,0 +1,55 @@
+.blog
+{
+    min-height: 1120px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog__triangles {
+    fill:#fff;
+}
+
+.blog__bar {
+    width: 21%;
+    padding-left: 125px;
+    margin-right: 115px;
+    float: left;
+    text-align: right;
+}
+
+.blog__articles {
+    width: 55%;
+    float: left;
+    overflow: hidden;
+}
+
+
+
+.articles__items {
+    padding: 70px 0;
+    border-bottom: 5px solid #f1f1f2;
+    
+    &:nth-of-type(even) {
+        border-bottom: none;
+    }
+}
+
+.articles__title {
+    font-size: 35px;
+    font-family: 'Bernier-Regular';
+    color: #455a64;
+}
+
+.articles__date {
+    font-size: 16px;
+    color: #00bfa5;
+    font-family: "Roboto-Regular";
+    margin: 28px 0;
+}
+
+.articles__text {
+    font-size: 16px;
+    font-family: "Roboto-Regular";
+    color: #455a64;
+}

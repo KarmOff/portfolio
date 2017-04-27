@@ -1,0 +1,111 @@
+.form
+{
+    height: 438px;
+    width: 380px;
+    overflow: hidden;
+    background-color: rgba(255,255,255,.6);
+    border: 0;
+    border-radius: 5px;
+    position: relative;
+    
+    .title:before {
+        left:26px;
+    }
+    .title:after {
+        right:26px;
+    }
+    
+    &__title {
+    font-size: 34px;
+    color: #455a64;
+    width: 100%;
+    padding: 30px 67px;
+    text-align: center;
+    }
+    
+    
+    &__name {
+        width: 340px;
+        height: 45px;
+        margin:0 auto;
+        display: block;
+        margin-bottom: 20px;
+        border: 0;
+        border-radius: 5px;
+        color:gray;
+        padding: 15px;
+        font-family: "Roboto-Regular";
+        font-size: 16px;
+    }
+    
+    &__email {
+        width: 340px;
+        height: 45px;
+        margin:0 auto;
+        display: block;
+        margin-bottom: 20px;
+        border: 0;
+        border-radius: 5px;
+        padding: 15px;
+        font-family: "Roboto-Regular";
+        font-size: 16px;
+    }
+    
+    &__textarea {
+        width: 340px;
+        height: 140px;
+        margin:0 auto;
+        display: block;
+        resize: none;
+        border: 0;
+        border-radius: 5px;
+        padding: 15px;
+        font-family: "Roboto-Regular";
+        font-size: 16px;
+    }
+    
+    &__send {
+        display: block;
+        width: 190px;
+        padding: 13px 0;
+        border: 0;
+        color: #fff;
+        border-right: 1px solid #82cfc9;
+        background-color: #26bbaa;
+        text-align: center;
+        font-size: 16px;
+        font-family: "Roboto-Medium";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        
+        &:hover{
+            background-color: #268c8b;
+        }
+        
+    }
+    
+    
+    &__clear {
+        display: block;
+        width: 190px;
+        padding: 13px 0;
+        border: 0;
+        color: #fff;
+        border-left: 1px solid #82b7b9;
+        background-color: #26bbaa;
+        text-align: center;
+        font-size: 16px;
+        font-family: "Roboto-Medium";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        
+        &:hover{
+            background-color: #268c8b;
+        }
+    }
+}
+
+
+

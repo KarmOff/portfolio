@@ -1,7 +1,5 @@
-$white : #efeee9;
-$beige : #eeebdf;
 $main-font-color: #373e42;
-$work_white : #faf8f0;
+
 
 
 //layout setups
@@ -12,22 +10,26 @@ $work_white : #faf8f0;
 @import "helpers/mixins";
 
 //Blocks
+@import "blocks/triangle";
 @import "blocks/hero";
 @import "blocks/user";
 @import "blocks/section-title";
 @import "blocks/down-arrow";
 @import "blocks/about";
-@import "blocks/triangle";
 @import "blocks/title";
 @import "blocks/subtitle";
 @import "blocks/skills";
 @import "blocks/map";
 @import "blocks/call-back";
-@import "blocks/contacts";
 @import "blocks/footer";
 @import "blocks/nav-menu";
 @import "blocks/socials";
 @import "blocks/works-head";
 @import "blocks/slider";
 @import "blocks/btn_img";
-    
+@import "blocks/reviews";
+@import "blocks/form";
+@import "blocks/blog";
+@import "blocks/nav_bar";
+@import "blocks/hero_blog";
+@import "blocks/hamburger";

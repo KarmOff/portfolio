@@ -6,23 +6,10 @@
     background-color: #faf8f0;
 }
 
-.work-head__triangle
-{
-    position: absolute;
-    bottom: 100%;
-	width: 50%;
-	height: 110px;
-    fill: $work_white; 
-}
-.work__triangles_left
-{
-    left: 0;
+.works__triangles {
+    fill:#faf8f0;
 }
 
-work__triangles_right
-{
-    right: 0;
-}
 .work-head__title
 {
     @include centered();

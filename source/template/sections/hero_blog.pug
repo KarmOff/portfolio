@@ -1,0 +1,24 @@
+section.section.hero_blog
+    
+    header
+        ul.socials
+            each item in ['vk','gh','in']
+                li.socials__item
+                    a(href="" class=`social__link social__link_${item}`)
+                        svg.socials__icon
+                            use(xlink:href=`./assets/img/sprite/sprite.svg#${item}`)
+                                
+        a(href="")
+            svg.hamburger
+                use(xlink:href=`./assets/img/sprite/sprite.svg#hamburger`)
+        
+        
+        
+    .hero__title
+        .user.hero__user-block
+            .user__photo
+                .user__photo-avatar
+                    img(src="assets/img/content/user.jpg", alt="").user__photo-img
+            +title('Блог', 'about-header.png', 'subtitle')
+            .user__desc Статьи, которые я написал
+                

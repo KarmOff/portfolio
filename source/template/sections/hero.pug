@@ -1,17 +1,30 @@
 section.section.hero
-    .hero__bg
-        img(src="assets/img/bg/portfolio.jpg", alt="").hero__bg-img
-    ul.socials
-        each item in ['vk','gh','in']
-            li.socials__item
-                a(href="" class=`social__link social__link_${item}`)
-                    
-       
+    
+    header.header
+        .header__left
+            ul.socials
+                each item in ['vk','gh','in']
+                    li.socials__item
+                        a(href="" class=`social__link social__link_${item}`)
+                            svg.socials__icon
+                                use(xlink:href=`./assets/img/sprite/sprite.svg#${item}`)
+                                
+        .header__right            
+            a(href="")
+                svg.hamburger
+                    use(xlink:href=`./assets/img/sprite/sprite.svg#hamburger`)
         
-    a(href="").hamburger
+        
         
     a(href="").down-arrow
-        img(src="assets/img/icons/arrow_down.svg", alt="").down-arrow__icon
+        svg.down-arrow__icon
+            use(xlink:href=`./assets/img/sprite/sprite.svg#arrow_down`)
+        
+        
+        
+        
+        
+        
     .hero__title
         img(src="assets/img/decor/portfolio-header.png", alt="").section-title
         .user.hero__user-block

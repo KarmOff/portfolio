@@ -1,0 +1,65 @@
+.reviews {
+    min-height: 1281px;
+    background-image: url("../img/content/reviews.jpg");
+    background-size: cover;
+    
+     &__title {
+        margin: auto;
+        width: 440px;
+        text-align: center;   
+        display: block;
+        padding-bottom: 0;
+    }
+    
+    &__commetns {
+         width: 800px;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    &__commetns_item {
+        float: left;
+        width: 45%;
+        margin-right: 20px;
+        padding-top: 100px;
+        background-image: url('../img/content/comment.png');
+        background-repeat: no-repeat;
+        background-position: 0 20%;
+    }
+    
+    &__form {
+    margin: auto;
+    margin-top: 70px;   
+    }
+}
+
+
+
+.comments__text {
+    color: #455a64;
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+}
+
+.comments__aoutor {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.commetns__photo {
+    float: left;
+    margin-right: 20px;
+}
+
+.comments__name {
+    font-family: "Roboto-Bold";
+    font-size: 16px;
+    color: #20b5a1;
+    font-weight: bold;
+}
+
+.comments__specialty {
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    color: #20b5a1;
+}
