@@ -4,10 +4,14 @@
 .nav-menu__item {
 	display: inline-block;
 	margin-right: 30px;
-
+    
 	&:last-child {
 		margin-right: 0;
 	}
+    
+    @include tablets {
+        margin-right: 40px;
+    }
 }
 
 .nav-menu__link {

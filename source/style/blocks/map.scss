@@ -4,14 +4,23 @@
 	background: url('../img/content/map.jpg') center center no-repeat;
 	background-size: cover;
     position: relative;
+    
+    @include width_1200 {
+        height: 974px;
+    }
+    
+    @include tablets {
+        height: 860px;
+    }
 }
 
 .map__contacts
 {
-    top:0;
     color: #373e42;
     @include centered(x);
-    top:328px;
+    @include tablets {
+    top:177px;
+    }
 }
 
 .map_contacts_ul

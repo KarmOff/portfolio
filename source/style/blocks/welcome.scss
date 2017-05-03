@@ -1,23 +1,13 @@
-.welcome {
+
+
+
+
+.global_welcome {
     background-image: url('../img/bg/welcome_bg.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    
-    .socials__icon {
-        fill:#00bfa5;
-        opacity: 0.5;
-        
-        &:hover { 
-        opacity: 1;
-        }
-    }
-    
 }
-
 
 .form__welcom {
     @include centered();

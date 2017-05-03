@@ -9,6 +9,10 @@
     background-repeat: no-repeat;
     font-family: "Bernier-Regular";
     
+    @include tablets {
+        font-size: 49px;
+    }
+    
     
     
     $margin: 40px;

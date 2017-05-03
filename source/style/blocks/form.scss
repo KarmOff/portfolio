@@ -1,77 +1,117 @@
-.form
-{
+.form {
     width: 380px;
-    height: 395px;
-    background-image: url("../img/content/form_bg.png");
-    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 5px;
     
-    &__photo {
-        width: 147px;
-        height: 147px;
-        border-radius: 50%;
-        margin-bottom: 25px;
-        overflow: hidden;
-        display: inline-block;
-        margin-bottom: 10px;
-        margin-top: 40px;
+    &__user-block {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
     }
+}
+
+
+.form__photo {
+    width: 147px;
+	height: 147px;
+	border-radius: 50%;
+	overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.form__name {
+    margin-bottom: 10px;
+	color: #455a64;
+	font-size: 28px;
+    font-family: "Roboto-Medium";
+    text-align: center;
+    padding: 0 20px;
+    font-weight: bold;
+}
+.form__desc {
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    color: #455a64;
+    opacity: 0.8;
+    text-align: center;
+    padding: 0 20px;
+}
+.socials__icon {
+        opacity: 0.5;
+        &:hover { 
+        opacity: 1;
+        }
+}
+.socials_welcome-position {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin:35px 10px;
+}
+
+.socials__item_margin {
+    margin-right: 30px;
     
-    &__name {
-        color: #455a64;
-        font-size: 28px;
-        font-family: "Roboto-Medium";
-        font-weight: bold;
+    &:last-child { 
+    margin-right: 0px;
     }
+}
+
+.socials__icon_fill-green {
+    fill:#00bfa5;
+}
+
+.form__nav-menu {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+
+.nav-menu__items {
+    flex:1;
+    background-color: #07ac98;
+    text-align: center;
+    border-right: 2px solid #73c8c0;
     
-    &__desc {
-        color: #455a64;
-        opacity: 0.8;
-        font-family: "Roboto-Regular";
-        font-size: 16px;
+    
+    &:hover {
+        background-color: #098c84;
     }
-    
-    .socials {
-        margin:auto;
-        bottom: 85px;
-        position: static;
-        text-align: center;
-        margin-top: 33px;
-        
-    }
-    
-    &__nav-menu {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        font-family: "Roboto-Medium";
-        font-size: 16px;
-        
-        
    
-        li {
-            border-right: 1px solid #73c8c0;
-            border-left: 1px solid #73c8c0;
-            width: 33.33333%;
-            float: left;
-            
-            &:first-child { border-left: none;}
-            &:last-child  { border-right: none;}
-        }
-        
-        a {
-            display:block;
-            float: left;
-            width: 100%;
-            background-color: #07ac98;
-            padding: 15px 0;
-            text-align: center;
-            color: #fff;
-            
-            &:hover {
-                background-color: #098d85;
-            }
-        }
-        
+    a {
+      
+        padding: 14px 0;
+        color: #fff;
+        display: block;
     }
+}
+
+.nav-menu__items:last-child { 
+border-right: 0px;
+}
+
+
+.login__name {
+   
+    padding-left: 20px;
+  
+}
+
+
+.login__name:before {
+    background: url("../img/icons/login.svg");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+}
+
+
+.login__password {
+    background: url("../img/icons/password.svg");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
 }

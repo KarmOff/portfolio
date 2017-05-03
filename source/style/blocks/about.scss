@@ -1,69 +1,107 @@
 .about{
     @extend %clearfix;   
-    height: 854px;
+    height: auto;
     position: relative;
+    display: flex;
+    
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .about__left, .about__right {
-    float: left;
-    width: 50%;
-    height: 100%;
+    height: auto;
     position: relative;
+    flex: 1;
 }
 
 .about__left{
     background: #efeee9;
     padding-right: 10px;
+    
+    @include width_1200() {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
 }
 
 .about__right{
     background: #eeebdf;
+    
+   
 }
 .about__triangles{
     position: absolute;
-    bottom: 100%;
-    width: 100%;
+    bottom: 0;
+    width: 50%;
 }
 .about__triangles-left {
     fill:#efeee9;
+    left: 0;
 }
 .about__triangles-right {
     fill:#eeebdf;
+    right: 0;
+    
+    @include tablets {
+        fill:#efeee9;
+    }
 }
 .about-data
 {
     padding-left: 40px;
+    @include tablets {
+        padding: 0;
+        
+    }
 }
 .about__left__blockleft
 {
-    width: 50%;
     float: left;
+    width: 50%;
+    
+    @include width_1200() {
+        width: 100%;
+    }
 }
 .about__left__blockright
 {
-  
-    width: 50%;
     float: left;
+    width: 50%;
+    
+    @include width_1200() {
+        width: 72%;
+    }
 }
 .user-about
 {
     @extend %clearfix;    
     color: #455a64;
-    width:443px;
-    float: right;
+    width:100%;
+    float: left;
 }
 .about__section-title
 {
     @include centered(x);
     margin-top: -50px;
+    
+    @include tablets {
+        margin-top: 0;
+    }
 }
 .user-about__picture
 {
     width: 100%;
-    height: 391px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
+    
+    img {
+        width: 100%;
+    }
 }
 
 .user-about__title
@@ -74,8 +112,11 @@
 .user-about__text
 {
     font-family: "Roboto-Regular";
-    font-size: 16px;
-   
+    
+    @include tablets {
+        margin-top: 20px;
+    }
+
 }
 .user-about__text p
 {
@@ -94,4 +135,17 @@
     font-size: 16px;
     color: #455a64;
     margin-top: 20px;
+    
+    @include tablets{
+        width: 61%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+
+.about-data__content {
+    @include tablets {
+        text-align: center;
+    }
 }

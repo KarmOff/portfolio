@@ -4,6 +4,9 @@
     text-align: center;
     position: relative;
     background-color: #faf8f0;
+    
+    display: flex;
+    justify-content: center;
 }
 
 .works__triangles {
@@ -12,5 +15,5 @@
 
 .work-head__title
 {
-    @include centered();
+    
 }

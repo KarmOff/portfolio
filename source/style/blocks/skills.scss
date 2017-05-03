@@ -29,12 +29,20 @@ display: inline-block;
 .skills__item
 {
     margin-bottom: 20px;
+    
+    @include tablets {
+        margin-bottom: 40px;
+    }
 }
 
 .skill-section__title
 {
     font-size: 28px;
-    font-family: "Roboto-Medium";
+    
+    @include tablets {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
 }
 
 
@@ -53,6 +61,11 @@ display: inline-block;
 .skill__name
 {
     @include centered();
+    color: #71bda5;
+    font-size: 13.95px;
+    @include tablets {
+        font-size: 12.83px;
+    }
 }
 .circle-0 {
    stroke-dasharray: .001 282.6;

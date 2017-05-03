@@ -4,4 +4,12 @@
     padding-top:0;
     padding-bottom: 0;
     margin: auto;
+    
+    @include width_1200() {
+        text-align: center;
+    }
+    
+    @include tablets {
+        font-size: 30px;
+    }
 }

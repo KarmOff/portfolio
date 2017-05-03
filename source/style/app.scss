@@ -1,13 +1,13 @@
 $main-font-color: #373e42;
 
-
+//mixins
+@import "helpers/mixins";
 
 //layout setups
 @import "layout/setups";
 @import "layout/fonts";
 
-//mixins
-@import "helpers/mixins";
+
 
 //Blocks
 @import "blocks/triangle";
@@ -26,7 +26,6 @@ $main-font-color: #373e42;
 @import "blocks/socials";
 @import "blocks/works-head";
 @import "blocks/slider";
-@import "blocks/btn_img";
 @import "blocks/reviews";
 @import "blocks/call-back";
 @import "blocks/blog";
@@ -37,3 +36,4 @@ $main-font-color: #373e42;
 @import "blocks/contacts";
 @import "blocks/form";
 @import "blocks/login";
+@import "blocks/header";

@@ -1,19 +1,40 @@
 .hero
 {
-    height: 600px;
+    height: 100vh;
     overflow: hidden;
     position: relative;
     background-image: url("../img/bg/portfolio.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    
+    
+    @include tablets {
+        background-image: url("../img/bg/tablets/hero_bg.jpg");
+        height: 506px;
+    }
 }
+
+
 
 .hero__title{
     @include centered(y);
     text-align: center;
     width: 100%;
+    background-image: url("../img/decor/portfolio-header.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: 50% 50%;
+    
+    @include tablets {
+        background-image: url("../img/decor/tablets/portfolio-header.png");
+    }
 }
 
 .hero__user-block {
    @include centered();
+}
+
+
+.social__item_hero {
+    margin-left: 25px;
 }
