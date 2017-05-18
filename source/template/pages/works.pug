@@ -4,6 +4,10 @@ block title
   - var title = 'works'
 
 block content
+    .preloader  
+        .preloader__spinner
+            .preloader__animation
+            .preloader__percents 0% 
     include ../sections/hero
     
     section.section.works-head
@@ -25,7 +29,7 @@ block content
                             use(xlink:href=`./assets/img/sprite/sprite.svg#link`)
        
             .slider__display
-                img(src="assets/img/content/1.png" alt="").slider__display-pic
+                
             .slider__btns
                 .slider-btns__down
                     img(src="assets/img/btns/down.jpg", alt="").slider-btns__img
@@ -40,4 +44,6 @@ block content
                     
                     
     include ../sections/reviews
+    
+block footer    
     include ../sections/footer

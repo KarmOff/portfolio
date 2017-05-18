@@ -24,6 +24,10 @@
         background: rgba($main-font-color, .2);
         width: 22px;
         height: 5px;
+        
+        @include phones{
+            top:43%;
+        }    
     }
     
     &:after {
@@ -33,4 +37,8 @@
     &:before{
         left: $margin;
     }
+    
+    
+    
+    
 }

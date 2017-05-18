@@ -20,7 +20,6 @@
     }
     
     &__commetns {
-        width: 65%;
         display: flex;
         justify-content: center;
         margin: auto;
@@ -31,6 +30,10 @@
         padding: 0 24px;
         }
         
+        @include phones {
+            flex-flow: column nowrap;
+            align-items: center;
+        }
     }
     
     &__commetns_item {
@@ -40,11 +43,17 @@
         background-repeat: no-repeat;
         background-position: 0 20%;
         flex: 1;
+        max-width: 350px;
         &:last-child { margin-right: 0px; }
         
         @include tablets {
             background-position: 0 0;  
             padding-top: 50px;
+        }
+        
+        @include phones {
+            max-width: 100%;
+            background-position: 50% 0;
         }
     }
     

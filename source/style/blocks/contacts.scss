@@ -1,15 +1,15 @@
 .contacts {
-    width: 380px;
-    height: 290px;
-    background-image: url("../img/content/call-baсk_bg.png");
-    background-repeat: no-repeat;
-    opacity: 0.85;
     padding: 35px 40px;
     font-family: "Roboto-Medium";
     font-size: 16px;
     opacity: 0.8;
+    @include centered();
+    z-index: 9999;
     
-    
+    @include tablets {
+        top:0;
+        @include centered(x);
+    }
 }
 
 

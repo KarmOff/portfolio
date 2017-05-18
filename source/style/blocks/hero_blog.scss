@@ -6,6 +6,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     
+    @include tablets {
+        background-image: url(../img/bg/tablets/hero_bg.jpg);
+        height: 505px;
+    }
     
     
     .subtitle
@@ -14,13 +18,19 @@
         font-size: 63px;
         color: #fff;
     }
-    .socials {
-        margin-left: 18.33%;
-    }
     
     .hamburger {
         margin-right: 18.33%;
     }
     
     
+    .hero__title {
+        background-image: none;
+    }
+    
+    
+    .title:after, .title:before {
+        background-color: #fff;
+        opacity: 0.4;
+    }
 }

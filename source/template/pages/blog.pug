@@ -5,7 +5,10 @@ block title
 
 block content
     include ../sections/hero_blog
-    
+    .preloader  
+        .preloader__spinner
+            .preloader__animation
+            .preloader__percents 0% 
     section.section.blog
         svg(viewbox="0 0 1000 100" preserveAspectRatio="none").triangles.blog__triangles.triangles_left
             polygon(points="0,0 0,100 1000,100")
@@ -41,5 +44,5 @@ block content
                 .articles__text
                     | Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития.      Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной  деятельности играет важную роль в формировании систем массового участия.
                     
-               
+block footer       
     include ../sections/footer

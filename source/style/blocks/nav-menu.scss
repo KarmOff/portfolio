@@ -1,5 +1,11 @@
 .nav-menu {
 	padding: 25px 0;
+    
+    @include phones {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
 }
 .nav-menu__item {
 	display: inline-block;
@@ -11,6 +17,10 @@
     
     @include tablets {
         margin-right: 40px;
+    }
+    
+    @include phones {
+        margin-right: 10px;
     }
 }
 

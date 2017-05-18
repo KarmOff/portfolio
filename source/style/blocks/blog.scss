@@ -5,6 +5,10 @@
     position: relative;
     padding-top: 70px;
     background-color: #fff;
+    
+    @include tablets {
+        padding-top: 50px;
+    }
 }
 
 .blog__triangles {
@@ -12,28 +16,42 @@
 }
 
 .blog__bar {
-    width: 21%;
-    padding-left: 125px;
-    margin-right: 115px;
+    width: 25%;
     float: left;
     text-align: right;
+    
+    @include tablets {
+        display: none;
+    }
 }
 
 .blog__articles {
-    width: 55%;
+    width: 75%;
     float: left;
     overflow: hidden;
+    
+    @include tablets {
+        width:100%;
+    }
 }
 
 
 
 .articles__items {
-    padding-bottom: 70px;
     border-bottom: 5px solid #f1f1f2;
+    width: 80%;
+    margin: auto;
     margin-bottom: 70px;
+    padding-bottom: 70px;
     
-    &:nth-of-type(even) {
-        border-bottom: none;
+    &:last-child {
+        border-bottom: 0px;
+    }
+ 
+    @include tablets {
+        width: 95%;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
     }
 }
 

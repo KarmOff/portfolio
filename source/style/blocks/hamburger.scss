@@ -1,5 +1,122 @@
-.hamburger {
-    width: 40px;
-    height: 35px;
-    fill:#fff;
+.input-toggler {
+  display: none;
+}
+
+.menu-toggler {
+  z-index: 9999;
+  height: 28px;
+  width: 35px;
+  position: absolute;
+  transition: .5s;
+  right: 25px;
+  top: 27px;
+  cursor: pointer;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+
+  &__line {
+    height: 4px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 3px;
+    transition-property: transform, opacity;
+    transition-duration: .5s, .25s;
+    transition-delay: 0s, .5s;
+
+    &:nth-child(2) {
+      top: calc(28px / 5 * 2);
+    }
+
+    &:nth-child(3) {
+      top: calc(28px / 5 * 4);
+    }
+  }
+}
+
+.input-toggler:checked ~ .menu-toggler .menu-toggler__line {
+  transition-delay: .25s, 0s;
+}
+
+.input-toggler:checked ~ .menu-toggler .menu-toggler__line:nth-child(1) {
+  transform: translateY(calc(27.4px / 5 * 2)) rotate(45deg);
+}
+
+.input-toggler:checked ~ .menu-toggler .menu-toggler__line:nth-child(2) {
+  opacity: 0;
+}
+
+.input-toggler:checked ~ .menu-toggler .menu-toggler__line:nth-child(3) {
+  transform: translateY(calc(27.4px / 5 * -2)) rotate(-45deg);
+}
+
+
+
+.hamburger__menu {
+
+  width: 100vw;
+  transform: translateY(calc(100vw * -1));
+  background-color: rgba(0, 191, 165, 0.87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: .5;
+  transition: transform .4s, background-position 1s .6s;
+}
+
+.input-toggler:checked ~ .hamburger__menu {
+  opacity: .9;
+  transform: translateY(0);
+}
+
+
+.input-toggler:checked + .menu-toggler {
+  opacity: 1;
+}
+
+.body_active {
+  overflow: hidden;
+}
+
+
+.hamburger__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+
+  .title {
+    color: #fff;
+    padding: 20px 80px;
+    &:before {
+      display: none;
+    }
+    &:after {
+      display: none;
+    }
+
+    &:hover {
+      &:before {
+        display: block;
+        background: #fff;
+        opacity: 1;
+      }
+
+      &:after {
+        display: block;
+        background: #fff;
+        opacity: 1;
+      }
+    }
+  }
+
+
+
 }

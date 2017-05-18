@@ -1,0 +1,194 @@
+.form-login {
+    width: 380px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include centered;
+    
+    
+    .form__nav-menu {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+.form__login-name {
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-left: 45px;
+    font-family: "Roboto-Reular";
+    color: #373e42;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    width: 100%;
+    &:before {
+        content: '';
+        width:45px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #f0efe9;
+        background-image: url('../img/icons/login_name.png');
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    
+    input {
+        width: 100%;
+        border: none;
+        background-color: #fff;
+        color: #373e42;
+        padding: 15px 20px;
+        line-height: 1;
+        font-family: 'roboto', sans-serif;
+        outline: none;
+        font-size: 16px;
+    }
+}
+
+.form__login-password {
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-left: 45px;
+    font-family: "Roboto-Reular";
+    color: #373e42;
+    margin-bottom: 20px;
+    width: 100%;
+    &:before {
+        content: '';
+        width:45px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #f0efe9;
+        background-image: url('../img/icons/login_password.png');
+        background-position:center;
+        background-repeat: no-repeat;
+    }
+    
+    input {
+        width: 100%;
+        border: none;
+        background-color: #fff;
+        color: #373e42;
+        padding: 15px 20px;
+        line-height: 1;
+        font-family: 'roboto', sans-serif;
+        outline: none;
+        font-size: 16px;
+    }
+}
+
+.form__login-checkbox {
+    display: flex;
+}
+
+.checkbox {
+    display: none;
+}
+.checkbox-label {
+    display: flex;
+}
+ .checkbox-label:before {
+    content: "";
+    display: block;
+    margin-right: 10px;
+    width: 19px;
+    height: 19px;
+    border: 1px solid rgba(139, 141, 141, 0.9);
+    background: #fff;
+    border-radius: 3px;
+    
+}
+.checkbox, .checkbox-label {
+    cursor: pointer;
+}
+.checkbox:checked + .checkbox-label:before {
+    background:url('../img/icons/check.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #00bfa5;
+    background-size: 70%;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.form__login-text {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: "Roboto-Bold";
+    font-weight: bold;
+    color: #455a64;
+}
+
+.form__login-radio {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+}
+
+
+
+.radio {
+    display: none;
+}
+
+
+.radio, .radio-label {
+    cursor: pointer;
+    margin-right: 30px;
+    position: relative;
+}
+
+ .radio-label:before {
+    content: "";
+    display: block;
+    margin-right: 10px;
+    float: left;
+    width: 19px;
+    height: 19px;
+    border: 1px solid rgba(139, 141, 141, 0.9);
+    background: #fff;
+    border-radius: 10px;
+}
+.radio:checked + .radio-label:before {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.radio:checked + .radio-label {
+    color: #00bfa5;
+}
+
+.radio:checked + .radio-label:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background: #00bfa5;
+}

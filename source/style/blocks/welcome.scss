@@ -3,21 +3,20 @@
 
 
 .global_welcome {
-    background-image: url('../img/bg/welcome_bg.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
 }
 
 .form__welcom {
     @include centered();
     overflow: hidden;
+    z-index: 999;
 }
 
 .welcome__login {
     position: absolute;
     top:24px;
     right: 100px;
+    z-index: 888;
 }
 
 .welcome__autor {

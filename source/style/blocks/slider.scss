@@ -1,12 +1,16 @@
 .slider {
     display: flex;
     height: 750px;
-    display: flex;
     flex-flow: column wrap;
+    align-items: stretch;
     
       @include tablets {
         flex-wrap: nowrap;
         height: 1010px;
+    }
+    
+    @include phones {
+        height: auto;
     }
 }
 
@@ -15,7 +19,7 @@
 
 .slider__desc {
    
-    height: 80%;
+    height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -29,8 +33,11 @@
         display: flex;
         justify-content: center;
     }
+    
+    @include phones {
+        height: 320px;
+    }
 }
-
 
 
 .slider__desc-skills
@@ -47,10 +54,18 @@
     font-weight: 500;
     text-align: center;
     
+    @include width_1200 {
+        width: 70%;
+    }
+    
     @include tablets {
         width: 350px;
         margin-bottom: 20px;
         margin-top: 20px;
+    }
+    
+    @include phones {
+        width: 100%;
     }
 }
 
@@ -87,7 +102,15 @@
     height: 525px;
     background-color: #efebe0;
     position: relative;
-    
+    background-image:url("../img/content/1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include width_1200 {
+        background-size: contain;
+    }
+    @include tablets {
+        background-size: inherit;
+    }
     
     @include tablets {
         order:-1;
@@ -95,6 +118,10 @@
         height: 527px;
     }
     
+    @include phones {
+        background-size: contain;
+        height: 357px;
+    }
 }
 .slider__display-pic
 {
@@ -111,6 +138,10 @@
     
     @include tablets {
      width: 100%;   
+    }
+    
+    @include phones {
+        height: 150px;
     }
 }
 

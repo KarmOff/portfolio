@@ -1,8 +1,9 @@
 
 .map {
 	height: 1074px;
-	background: url('../img/content/map.jpg') center center no-repeat;
-	background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     
     @include width_1200 {
@@ -11,15 +12,31 @@
     
     @include tablets {
         height: 860px;
+        display: block;
     }
 }
 
 .map__contacts
 {
+    background-color: #fff;
+    opacity: 0.5;
+    width: 380px;
+    height: 290px;
     color: #373e42;
-    @include centered(x);
     @include tablets {
-    top:177px;
+        @include centered(x);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    @include phones {
+        margin-top: 0;
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
     }
 }
 
@@ -27,3 +44,9 @@
 {
     margin-top: 25px;
 }
+
+#mapkit-9650 {
+        height:1074px;
+        width:100%;
+        position: relative;
+    }

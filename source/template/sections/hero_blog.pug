@@ -1,19 +1,12 @@
 section.section.hero_blog
     
-    header
+    header.header
         ul.socials
             each item in ['vk','gh','in']
-                li.socials__item
+                li.socials__item.social__item_hero
                     a(href="" class=`social__link social__link_${item}`)
-                        svg.socials__icon
+                        svg.socials__icon.socials__icon_fill_white
                             use(xlink:href=`./assets/img/sprite/sprite.svg#${item}`)
-                                
-        a(href="")
-            svg.hamburger
-                use(xlink:href=`./assets/img/sprite/sprite.svg#hamburger`)
-        
-        
-        
     .hero__title
         .user.hero__user-block
             .user__photo
@@ -21,4 +14,25 @@ section.section.hero_blog
                     img(src="assets/img/content/user.jpg", alt="").user__photo-img
             +title('Блог', 'about-header.png', 'subtitle')
             .user__desc Статьи, которые я написал
+
+                                        
+input(type="checkbox")#menuToggler.input-toggler
+label(for="menuToggler").menu-toggler
+    span.menu-toggler__line
+    span.menu-toggler__line
+    span.menu-toggler__line
+.hamburger__menu
+    ul.hamburger__links
+        li.hamburger__item
+            a(href="works.html").title Мои работы
+        li.hamburger__item
+            a(href="about.html").title Обо мне
+        li.hamburger__item
+            a(href="blog.html").title Блог
+        li.hamburger__item
+            a(href="index.html").title Авторизация    
+        
+        
+        
+    
                 

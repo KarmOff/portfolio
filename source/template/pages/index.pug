@@ -4,39 +4,88 @@ block title
   - var title = 'Main page'
 
 block content
+
     section.section.welcome
-            .form.form__welcom
-                .form__user-block
-                    .form__photo
-                        img(src="assets/img/content/user.jpg", alt="")
-                    .form__name
-                        | Артур Кармов
-                    .form__desc Личный сайт веб-разработчика
+            .preloader
+                .preloader__spinner
+                    .preloader__animation
+                    .preloader__percents 0%
 
-                ul.socials.socials_welcome-position
-                    each item in ['vk','gh','in']
-                        li.socials__item.socials__item_margin
-                            a(href="" class=`social__link social__link_${item}`)
-                                svg.socials__icon.socials__icon_fill-green
-                                    use(xlink:href=`./assets/img/sprite/sprite.svg#${item}`)
-                ul.form__nav-menu
-                    li.nav-menu__items
-                        a(href="#") Мои работы
-                    li.nav-menu__items
-                        a(href="#") Обо мне
-                    li.nav-menu__items
-                        a(href="#") Блог   
-            
-            .form.form__login
-                .lgoin__title
-                    +title('Авторизуйтесь', '', 'subtitle')  
-                form.form__auth
-                    input(type="text", name="login", placeholder='Логин').login__name
-                    input(type="password", name="password", placeholder='Пароль').login__password
+            ul.parallax#parallax
+                li(data-speed=0.9).layer.layer__1
+                li(data-speed=0.5).layer.layer__2
+                li(data-speed=0.6).layer.layer__3
+                li(data-speed=0.7).layer.layer__4
+                li(data-speed=0.5).layer.layer__5
+                li(data-speed=0.3).layer.layer__6
+                li(data-speed=0.25).layer.layer__7
+                li(data-speed=0.1).layer.layer__8
+                li(data-speed=0.1).layer.layer__9
+                li(data-speed=0).layer.layer__10
 
-            
-            
-            a(href="#").login.welcome__login Авторизоваться
+
+            .flip-container
+                .flipper
+                    .front
+                        .form.form__welcom
+                            .form__user-block
+                                .form__photo
+                                    img(src="assets/img/content/user.jpg", alt="")
+                                .form__name
+                                    | Артур Кармов
+                                .form__desc Личный сайт веб-разработчика
+
+
+
+                            ul.socials.socials_welcome-position
+                                each item in ['vk','gh','in']
+                                    li.socials__item.socials__item_margin
+                                        a(href="" class=`social__link social__link_${item}`)
+                                            svg.socials__icon.socials__icon_fill-green
+                                                use(xlink:href=`./assets/img/sprite/sprite.svg#${item}`)
+                            ul.form__nav-menu
+                                li.nav-menu__items
+                                    a(href="works.html") Мои работы
+                                li.nav-menu__items
+                                    a(href="about.html") Обо мне
+                                li.nav-menu__items
+                                    a(href="blog.html") Блог
+                    .back
+                        .form.form-login
+                            +title('Авторизуйтесь', '', 'subtitle')
+                            .form__login-name
+                                label
+                                input(type="text", name="login", placeholder='Логин')
+                            .form__login-password
+                                label
+                                input(type="text", name="password", placeholder='Пароль')
+                            .form__login-checkbox
+                                input(type="checkbox", name="checkbox", text="Я человек").checkbox#chekbox
+                                label(for="chekbox").checkbox-label Я человек
+                            .form__login-text Вы точно не робот?
+                            .form__login-radio
+                                input(type="radio", name="radiobox").radio#radio1
+                                label(for="radio1").radio-label Да
+
+                                input(type="radio", name="radiobox").radio#radio2
+                                label(for="radio2").radio-label Не уверен
+
+                            ul.form__nav-menu
+                                li.nav-menu__items.main_page
+                                    a(href="#") На главную
+                                li.nav-menu__items
+                                    a(href="#") Войти
+
+
+
+
+
+
+
+
+
+
+            button(type='button' name='login').login.welcome__login Авторизоваться
 
 block footer
     include ../sections/footer_welcome
